@@ -1,8 +1,12 @@
 {
-  "host": "http://api.paiza.io:80",
-  "api_key": "guest",
-  "test_target_directories": ["./source_*"],
-  "test_case_directories": ["./test_case"],
-  "test_case_input_extension": ".in",
-  "test_case_answer_extension": ".out"
+  "client": {
+    "host": "http://api.paiza.io:80",
+    "api_key": "guest"
+  },
+  "test_target": [
+    { "pattern": "./source_*/*.*" }
+  ],
+  "test_case": [
+    { "directory": "./test_case", "input_extension": ".in", "output_extension": ".out" }
+  ]
 }
