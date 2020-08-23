@@ -1,0 +1,15 @@
+{
+  "client": {
+    "host": "http://api.paiza.io:80",
+    "api_key": "guest"
+  },
+  "test_target": [
+    { "pattern": "./source_*/*.*" }
+  ],
+  "test_case": [
+    { "directory": "./test_case", "input_extension": ".in", "output_extension": ".out" }
+  ],
+  "test_method": {
+    "file_name": "./test_method.rb"
+  }
+}
