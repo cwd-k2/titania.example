@@ -1,6 +1,6 @@
 {
   "client": {
-    "host": "http://api.paiza.io:80",
+    "host": "https://api.paiza.io",
     "api_key": "guest"
   },
   "test_target": [
@@ -10,6 +10,10 @@
     { "pattern": "./source_code/build_error.c", "expect": "BUILD FAILURE" }
   ],
   "test_case": [
-    { "directory": "./test_case", "input_extension": ".in", "output_extension": ".ans" }
+    {
+      "directory": "./test_case",
+      "input_extension": ".in",
+      "output_extension": ".ans"
+    }
   ]
 }
